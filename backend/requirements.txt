@@ -3,4 +3,4 @@ python-dotenv
 Flask-Cors
 openai
 requests
-tavily
+tavily-python
