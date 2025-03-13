@@ -14,7 +14,7 @@ class WebRTCConnection {
     async initialize() {
       try {
         // Get an ephemeral key from the server
-        const tokenResponse = await fetch("http://127.0.0.1:5000/session");
+        const tokenResponse = await fetch("https://sena-interview-be.onrender.com/session");
         const data = await tokenResponse.json();
         
         if (data.error) {
@@ -145,7 +145,7 @@ class WebRTCConnection {
   
     async search(query) {
       try {
-        const response = await fetch('http://127.0.0.1:5000/search', {
+        const response = await fetch('https://sena-interview-be.onrender.com/search', {
             method: 'POST',
           headers: {
             'Content-Type': 'application/json'
